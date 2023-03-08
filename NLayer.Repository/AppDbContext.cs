@@ -18,6 +18,25 @@ namespace NLayer.Repository
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            modelBuilder.Entity<ProductFeature>().HasData(new ProductFeature
+            {
+                Id = 1,
+                Color = "Kırmızı",
+                Height = 30,
+                Width = 1,
+                ProductId = 1
+            },
+                new ProductFeature 
+                {
+                    Id = 2,
+                    Color = "Mor",
+                    Height = 28,
+                    Width = 1,
+                    ProductId = 1
+                });
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
