@@ -7,7 +7,7 @@ using NLayer.Core.UnitOfWorks;
 
 namespace NLayer.Repository.UnitOfWorks
 {
-    internal class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContext _context;
 

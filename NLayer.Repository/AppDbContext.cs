@@ -33,7 +33,7 @@ namespace NLayer.Repository
                     Color = "Mor",
                     Height = 28,
                     Width = 1,
-                    ProductId = 1
+                    ProductId = 2
                 });
 
             base.OnModelCreating(modelBuilder);
